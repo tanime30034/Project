@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dogs - MyPETS</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index1.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+        <div class="container-fluid">
+            <!-- Navbar Toggle (on the left) -->
+            <div class="navbar-toggler-container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- Use the image URL from Flaticon directly -->
+                    <img src="images/food.png" alt="Menu" class="navbar-toggler-img">
+                </button>
+            </div>
+            
+            <!-- Logo in the center -->
+            <div class="navbar-logo-container">
+                <a class="navbar-brand" href="index1.html">
+                    <img src="images/logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                    <span>MyPETS</span>
+                </a>
+            </div>
+    
+            <!-- Navbar Items -->
+            <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="adopt.php">Adopt Pet</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Pet Care</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Lost & Found</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="pet_accesories.html">Pet Accessories</a>
+                    </li>
+                </ul>
+            </div>
+    
+            <!-- Login Button -->
+            <a href="login.html">
+                <button class="btn btn-light" type="button" id="login">
+                    Login
+                </button>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Store Section -->
+    <div class="container mt-5 pt-5">
+        <h1 class="text-dark-purple text-center mb-4">Welcome to Our Store</h1>
+        <div class="row">
+            <!-- Product Card 1 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card text-center"> <!-- Added text-center class -->
+                    <img src="images/catfood.webp" class="card-img-top" alt="Cat Food">
+                    <div class="card-body">
+                        <h5 class="card-title">Cat Food</h5>
+                        <p class="card-text">250 TK</p>
+                        <a href="checkout.html?name=Cat%20Food&price=250TK&image=images/catfood.webp" class="btn btn-primary">Buy</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product Card 2 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card text-center"> <!-- Added text-center class -->
+                    <img src="images/dogfood.jpg" class="card-img-top" alt="Dog Food">
+                    <div class="card-body">
+                        <h5 class="card-title">Dog Food</h5>
+                        <p class="card-text">180 TK</p>
+                        <a href="checkout.html?name=Dog%20Food&price=180TK&image=images/dogfood.jpg" class="btn btn-primary">Buy</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product Card 3 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card text-center"> <!-- Added text-center class -->
+                    <img src="images/toy.jpg" class="card-img-top" alt="Pet Toy">
+                    <div class="card-body">
+                        <h5 class="card-title">Pet Toy</h5>
+                        <p class="card-text">570 TK</p>
+                        <a href="checkout.html?name=Toy&price=570TK&image=images/toy.jpg" class="btn btn-primary">Buy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <footer class="footer">
+        &copy; 2024 MyPet. All rights reserved.
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

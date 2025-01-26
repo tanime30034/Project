@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Help Desk</title>
+</head>
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #7700ff;
+            padding: 1rem;
+            color: white;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .section {
+            margin-bottom: 2rem;
+        }
+
+        .section h2 {
+            margin-bottom: 1rem;
+            color: #007bff;
+        }
+
+        .section p {
+            margin-bottom: 1rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background-color: #2f00ff;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 1rem;
+        }
+
+        .btn:hover {
+            background-color: #002ab3;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #561669;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Pet Help Desk</div>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Help</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="section">
+            <h2>Volunteer to Help Roadside Pets</h2>
+            <p>Join our community of volunteers to provide care and shelter for roadside dogs and cats. Your effort can save lives and provide these animals a better future.</p>
+            <a href="#"<button type="button" onclick="window.location.href='volunteer.html'">Become A Volunteer</button>
+            </a>
+
+        </div>
+
+        <div class="section">
+            <h2>Raise Donations</h2>
+            <p>Help us gather resources to feed, shelter, and provide medical care for stray dogs and cats. Your donations can make a huge difference in their lives.</p>
+            <a href="#"<button type="button" onclick="window.location.href='donation.html'">Donate</button>
+            </a>
+        </div>
+
+        <div class="section">
+            <h2>Book a Vet</h2>
+            <p>If you find a sick or injured pet, book an appointment with our partnered veterinarians. We ensure these animals get the best medical care they deserve.</p>
+            <a href="#"<button type="button" onclick="window.location.href='book_vet.html'">Book A Vet</button>
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2025 My Pet. All Rights Reserved.
+    </footer>
+
+    
+</body>
+</html>

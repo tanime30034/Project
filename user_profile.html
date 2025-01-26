@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #5900ff;
+            padding: 1rem;
+            color: white;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-details {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+        }
+
+        .profile-details div {
+            padding: 1rem;
+            background-color: #e9ecef;
+            border-radius: 4px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #48295a;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">My Pet User Profile</div>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">User Profile</a>
+            <a href="#">Pets</a>
+            <a href="#">Administration</a>
+            <a href="#">Logout</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2>User Profile</h2>
+        <div class="profile-details">
+            <div><strong>Full Name:</strong>Rafa Rahman</div>
+            <div><strong>Email:</strong> rafa@example.com</div>
+            <div><strong>Phone:</strong> +123456789</div>
+            <div><strong>Address:</strong> 5678 Thomas Lane, Pink City, AC 98765</div>
+            <div><strong>Registered Pets:</strong> Tommy (Dog), Kitty (Cat)</div>
+        </div>
+    </div>
+
+    <footer>
+        &copy;2025 My Pet. All Rights Reserved.
+    </footer>
+
+</body>
+</html>

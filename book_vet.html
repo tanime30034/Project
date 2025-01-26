@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Vet</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #8c00ff;
+            padding: 1rem;
+            color: white;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        button {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background-color: #2600ff;
+            color: white;
+            text-decoration: none;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #331e66;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Pet Help Desk</div>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Help</a>
+            <a href="#">Donate</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2>Book a Vet</h2>
+        <p>Need medical assistance for your pet? Use the form below to book a vet appointment for your dog or cat.</p>
+
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="owner-name">Owner's Full Name</label>
+                <input type="text" id="owner-name" name="owner-name" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="pet-name">Pet's Name</label>
+                <input type="text" id="pet-name" name="pet-name" placeholder="Enter your pet's name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="pet-type">Pet Type</label>
+                <select id="pet-type" name="pet-type" required>
+                    <option value="dog">Dog</option>
+                    <option value="cat">Cat</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="appointment-date">Preferred Appointment Date</label>
+                <input type="date" id="appointment-date" name="appointment-date" required>
+            </div>
+
+            <div class="form-group">
+                <label for="contact">Contact Number</label>
+                <input type="tel" id="contact" name="contact" placeholder="Enter your contact number" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Additional Information</label>
+                <textarea id="message" name="message" rows="5" placeholder="Provide any additional details" required></textarea>
+            </div>
+
+            <button type="submit">Book Appointment</button>
+        </form>
+    </div>
+
+    <footer>
+        &copy; 2025 My Pet. All Rights Reserved.
+    </footer>
+
+</body>
+</html>
